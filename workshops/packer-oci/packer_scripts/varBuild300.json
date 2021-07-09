@@ -14,7 +14,7 @@
       "fingerprint":"{{user `my.fingerprint`}}",
       "availability_domain": "{{user `my.availability_domain`}}",
       "region": "{{user `my.region`}}",
-      "base_image_ocid": "{{user `my.base_image_oci`}}",
+      "base_image_ocid": "{{user `my.base_image_ocid`}}",
       "compartment_ocid": "{{user `my.compartment_ocid`}}",
       "subnet_ocid": "{{user `my.subnet_ocid`}}",
       "image_name": "Build300",
