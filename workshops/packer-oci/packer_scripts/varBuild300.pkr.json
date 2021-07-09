@@ -1,11 +1,11 @@
 {
- "_comment": "You can find all the base images for OCI here...https://docs.cloud.oracle.com/iaas/images/ ",
- "_comment": "we will be using CentOS, so select the one in the Datacenter youre building in... ",
- "_comment": "ca-toronto-1  ocid1.image.oc1.ca-toronto-1.aaaaaaaarcpd4odfcwdgmzseymqva4kxc7n5fy2fakvarbsswxadgdrqoz2q",
- "_comment": "eu-frankfurt-1  ocid1.image.oc1.eu-frankfurt-1.aaaaaaaauf3vss4np44dl3vnbzyuwm6cic7hpfwk6dsxpecgorsgkky463hq",
- "_comment": "uk-london-1  ocid1.image.oc1.uk-london-1.aaaaaaaa7x6sa2gu3i7cjpq3axnfrf7wansxbwk4bvznsqczkfuj6ve4es6a",
- "_comment": "us-ashburn-1  ocid1.image.oc1.iad.aaaaaaaas2tyaduboyhp2wk42jlupytscphledptjobv2pgprzvsvdttho3a",
- "_comment": "us-phoenix-1  ocid1.image.oc1.phx.aaaaaaaazpixpja7iu4iflurtcguzdx6aiswsue77bf5q5eiz5l5cq7hhnfa",
+ "_comment1": "You can find all the base images for OCI here...https://docs.cloud.oracle.com/iaas/images/ ",
+ "_comment2": "we will be using CentOS, so select the one in the Datacenter youre building in... ",
+ "_comment3": "ca-toronto-1  ocid1.image.oc1.ca-toronto-1.aaaaaaaarcpd4odfcwdgmzseymqva4kxc7n5fy2fakvarbsswxadgdrqoz2q",
+ "_comment4": "eu-frankfurt-1  ocid1.image.oc1.eu-frankfurt-1.aaaaaaaauf3vss4np44dl3vnbzyuwm6cic7hpfwk6dsxpecgorsgkky463hq",
+ "_comment5": "uk-london-1  ocid1.image.oc1.uk-london-1.aaaaaaaa7x6sa2gu3i7cjpq3axnfrf7wansxbwk4bvznsqczkfuj6ve4es6a",
+ "_comment6": "us-ashburn-1  ocid1.image.oc1.iad.aaaaaaaas2tyaduboyhp2wk42jlupytscphledptjobv2pgprzvsvdttho3a",
+ "_comment7": "us-phoenix-1  ocid1.image.oc1.phx.aaaaaaaazpixpja7iu4iflurtcguzdx6aiswsue77bf5q5eiz5l5cq7hhnfa",
     
 "builders": [
     {
