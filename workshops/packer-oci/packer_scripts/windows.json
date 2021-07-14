@@ -1,4 +1,5 @@
-"builders": [
+{
+    "builders": [
     {
     "type": "oracle-oci",
     "availability_domain": "HOMA:CA-ASHBURN-1-AD-1",
