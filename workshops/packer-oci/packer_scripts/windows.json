@@ -1,0 +1,27 @@
+"builders": [
+    {
+    "type": "oracle-oci",
+    "availability_domain": "HOMA:CA-ASHBURN-1-AD-1",
+    "base_image_ocid": "ocid1.image.****************************************************************frgq",
+    "compartment_ocid": "ocid1.compartment.oc1.****************************************************************ha",
+    "subnet_ocid": "ocid1.subnet.oc1.ca-ashburn-****************************************************************",
+    "shape": "VM.Standard2.1",
+    "image_name": "NewWindowsImage",
+    "communicator": "winrm",
+    "winrm_username": "opc",
+    "winrm_password": "Temporary_#Password",
+    "winrm_insecure": true,
+    "winrm_use_ssl": true,
+    "winrm_port": 5986,
+    "user_data_file": "./userdata.ps1"
+    }
+    ],
+    "provisioners": [
+    {
+    "type": "windows-shell",
+    "inline": [
+    "dir c:\\"
+    ]
+    }
+    ]
+    }
