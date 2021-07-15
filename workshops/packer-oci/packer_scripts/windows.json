@@ -19,10 +19,16 @@
       "subnet_ocid": "{{user `my.subnet_ocid`}}",
       "image_name": "Build300",
       "shape": "VM.Standard2.2",
-      "ssh_username": "opc",
-      "ssh_password": "welcome1",
       "key_file":"~/.oci/packer_api_key.pem",
       "type": "oracle-oci"
+      "image_name": "NewWindowsImage",
+      "communicator": "winrm",
+      "winrm_username": "opc",
+      "winrm_password": "welcome1",
+      "winrm_insecure": true,
+      "winrm_use_ssl": true,
+      "winrm_port": 5986,
+    # "user_data_file": "./userdata.ps1"
     }
   ],
   
