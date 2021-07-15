@@ -2,10 +2,10 @@
     "builders": [
     {
     "type": "oracle-oci",
-    "availability_domain": "HOMA:CA-ASHBURN-1-AD-1",
+    "availability_domain": "Ktgl:US-ASHBURN-AD-1",
     "base_image_ocid": "ocid1.image.****************************************************************frgq",
-    "compartment_ocid": "ocid1.compartment.oc1.****************************************************************ha",
-    "subnet_ocid": "ocid1.subnet.oc1.ca-ashburn-****************************************************************",
+    "compartment_ocid": "ocid1.compartment.oc1..aaaaaaaaj27o6fqegrnmd7hx7gttakuv5d4lzhdtbnutwgr7ib4m2h5457ua",
+    "subnet_ocid": "ocid1.subnet.oc1.iad.aaaaaaaakbp3pdgjuquoyaar4cwwg7fsdlavoji364txsti5iibwprs7jm5a",
     "shape": "VM.Standard2.1",
     "image_name": "NewWindowsImage",
     "communicator": "winrm",
