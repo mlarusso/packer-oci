@@ -1,6 +1,4 @@
-{
-    
-{
+ {
  "_comment1": "You can find all the base images for OCI here...https://docs.cloud.oracle.com/iaas/images/ ",
  "_comment2": "we will be using CentOS, so select the one in the Datacenter youre building in... ",
  "_comment3": "ca-toronto-1  ocid1.image.oc1.ca-toronto-1.aaaaaaaarcpd4odfcwdgmzseymqva4kxc7n5fy2fakvarbsswxadgdrqoz2q",
