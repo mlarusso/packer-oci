@@ -17,18 +17,16 @@
       "base_image_ocid": "{{user `my.base_image_ocid`}}",
       "compartment_ocid": "{{user `my.compartment_ocid`}}",
       "subnet_ocid": "{{user `my.subnet_ocid`}}",
-      "image_name": "Build300",
       "shape": "VM.Standard2.2",
       "key_file":"~/.oci/packer_api_key.pem",
-      "type": "oracle-oci"
+      "type": "oracle-oci",
       "image_name": "NewWindowsImage",
       "communicator": "winrm",
       "winrm_username": "opc",
       "winrm_password": "welcome1",
       "winrm_insecure": true,
       "winrm_use_ssl": true,
-      "winrm_port": 5986,
-    # "user_data_file": "./userdata.ps1"
+      "winrm_port": 5986
     }
   ],
   
