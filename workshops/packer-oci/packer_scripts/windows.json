@@ -26,7 +26,8 @@
       "winrm_password": "welcome1",
       "winrm_insecure": true,
       "winrm_use_ssl": true,
-      "winrm_port": 5986
+      "winrm_port": 5986,
+      "user_data_file": "./userdata.ps1"
     }
   ],
   
