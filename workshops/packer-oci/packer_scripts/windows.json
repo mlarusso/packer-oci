@@ -1,24 +1,35 @@
 {
     
+{
+ "_comment1": "You can find all the base images for OCI here...https://docs.cloud.oracle.com/iaas/images/ ",
+ "_comment2": "we will be using CentOS, so select the one in the Datacenter youre building in... ",
+ "_comment3": "ca-toronto-1  ocid1.image.oc1.ca-toronto-1.aaaaaaaarcpd4odfcwdgmzseymqva4kxc7n5fy2fakvarbsswxadgdrqoz2q",
+ "_comment4": "eu-frankfurt-1  ocid1.image.oc1.eu-frankfurt-1.aaaaaaaauf3vss4np44dl3vnbzyuwm6cic7hpfwk6dsxpecgorsgkky463hq",
+ "_comment5": "uk-london-1  ocid1.image.oc1.uk-london-1.aaaaaaaa7x6sa2gu3i7cjpq3axnfrf7wansxbwk4bvznsqczkfuj6ve4es6a",
+ "_comment6": "us-ashburn-1  ocid1.image.oc1.iad.aaaaaaaas2tyaduboyhp2wk42jlupytscphledptjobv2pgprzvsvdttho3a",
+ "_comment7": "us-phoenix-1  ocid1.image.oc1.phx.aaaaaaaazpixpja7iu4iflurtcguzdx6aiswsue77bf5q5eiz5l5cq7hhnfa",
+    
 "builders": [
     {
-    "type": "oracle-oci",
-    "availability_domain": "Ktgl:US-ASHBURN-AD-1",
-    "base_image_ocid": "ocid1.image.oc1.iad.aaaaaaaafjeywk4pmink5lmvhbfwzshlb4skyh74zd3qbberxex4fdkpg62a",
-    "compartment_ocid": "ocid1.compartment.oc1..aaaaaaaaj27o6fqegrnmd7hx7gttakuv5d4lzhdtbnutwgr7ib4m2h5457ua",
-    "subnet_ocid": "ocid1.subnet.oc1.iad.aaaaaaaakbp3pdgjuquoyaar4cwwg7fsdlavoji364txsti5iibwprs7jm5a",
-    "shape": "VM.Standard2.1",
-    "image_name": "NewWindowsImage",
-    "communicator": "winrm",
-    "winrm_username": "opc",
-    "winrm_password": "Temporary_#Password",
-    "winrm_insecure": true,
-    "winrm_use_ssl": true,
-    "winrm_port": 5986,
-    "user_data_file": "./userdata.ps1"
+      "user_ocid":"{{user `my.user_ocid`}}",
+      "tenancy_ocid":"{{user `my.tenancy_ocid`}}",
+      "fingerprint":"{{user `my.fingerprint`}}",
+      "availability_domain": "{{user `my.availability_domain`}}",
+      "region": "{{user `my.region`}}",
+      "base_image_ocid": "{{user `my.base_image_ocid`}}",
+      "compartment_ocid": "{{user `my.compartment_ocid`}}",
+      "subnet_ocid": "{{user `my.subnet_ocid`}}",
+      "image_name": "Build300",
+      "shape": "VM.Standard2.2",
+      "ssh_username": "opc",
+      "ssh_password": "welcome1",
+      "key_file":"~/.oci/packer_api_key.pem",
+      "type": "oracle-oci"
     }
-],
-    "provisioners": [
+  ],
+  
+  
+  "provisioners": [
     {
     "type": "windows-shell",
     "inline": [
